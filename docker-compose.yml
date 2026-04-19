@@ -1,0 +1,20 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./model.h5:/app/model.h5:ro
+      - ./scaler.pkl:/app/scaler.pkl:ro
+      - ./student_data.csv:/app/student_data.csv:ro
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api

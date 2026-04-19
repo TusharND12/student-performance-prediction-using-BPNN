@@ -1,0 +1,35 @@
+TOTAL ROWS (first 100k loaded): 100000
+pass_fail distribution:
+pass_fail
+1    80606
+0    19394
+Name: count, dtype: int64
+
+at_risk_flag distribution:
+at_risk_flag
+0    51184
+1    48816
+Name: count, dtype: int64
+
+honors_flag distribution:
+honors_flag
+0    96064
+1     3936
+Name: count, dtype: int64
+
+top_performer_flag distribution:
+top_performer_flag
+0    98519
+1     1481
+Name: count, dtype: int64
+
+Describe (selected cols):
+          math_score  science_score  english_score  attendance_rate  study_hours_daily   previous_gpa      final_gpa  standardized_exam_score      pass_fail   at_risk_flag
+count  100000.000000  100000.000000  100000.000000    100000.000000      100000.000000  100000.000000  100000.000000            100000.000000  100000.000000  100000.000000
+mean       64.992039      68.035618      70.021814         0.748931           2.507669       2.793010       2.497169                64.843868       0.806060       0.488160
+std        14.431927      13.609606      11.404381         0.110694           1.251525       0.623694       0.645081                16.985212       0.395384       0.499862
+min        -0.085336       6.747284      22.229530         0.192511           0.000000       0.000000       0.000000                 0.000000       0.000000       0.000000
+25%        55.234436      58.835210      62.325756         0.673711           1.633571       2.370418       2.059977                53.300583       1.000000       0.000000
+50%        65.036335      68.051412      69.986445         0.749541           2.494999       2.800195       2.498056                65.025460       1.000000       0.000000
+75%        74.702866      77.206693      77.721108         0.824946           3.353713       3.230897       2.940416                76.719270       1.000000       1.000000
+max       133.154240     123.980040     124.417725         1.000000           8.011250       4.000000       4.000000               100.000000       1.000000       1.000000

@@ -1,0 +1,54 @@
+# ─── OS / editor junk ───────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ─── Python ─────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.env
+.env.local
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ─── TensorFlow / Keras local caches ────────────────
+.keras/
+.tfrecords/
+
+# ─── Node / Vite ────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.eslintcache
+npm-debug.log*
+
+# ─── Jupyter ────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ─── Build outputs ──────────────────────────────────
+dist/
+build/
+*.log
+
+# ─── Huge / non-code data (keep out of GitHub) ──────
+# 1M-row training CSV is 397 MB — GitHub rejects > 100 MB files.
+student_academic_performance_1M.csv
+*.tar
+*.zip
+*.7z
+
+# ─── Generated analysis bundles ─────────────────────
+edupredict_*.csv
+at_risk*.csv
+scored*.csv

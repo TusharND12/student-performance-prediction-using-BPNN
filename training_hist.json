@@ -1,0 +1,5 @@
+{
+  "decision_threshold": 0.30000000000000004,
+  "threshold_metric": "balanced_accuracy",
+  "recalibrated_without_retrain": true
+}
